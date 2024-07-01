@@ -13,7 +13,7 @@
     --color9: #ffffff;
 }
 
-.mapel{
+.mapel {
     display: none;
     position: fixed;
     align-items: center;
@@ -29,28 +29,28 @@
     animation-fill-mode: forwards;
 }
 
-.mapel::-webkit-scrollbar{
+.mapel::-webkit-scrollbar {
     display: none;
 }
 
-.mapel.openMapel{
+.mapel.openMapel {
     display: grid;
     animation-name: showMapel;
 }
 
-@keyframes showMapel{
-    0%{
+@keyframes showMapel {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.content-mapel{
+.content-mapel {
     display: grid;
     gap: 20px;
     top: 7%;
@@ -97,7 +97,7 @@
     padding: 10px;
 }
 
-.box-h2-mapel{
+.box-h2-mapel {
     display: grid;
     position: relative;
     align-items: center;
@@ -105,7 +105,7 @@
     width: 100%;
 }
 
-.box-mapel{
+.box-mapel {
     display: grid;
     position: relative;
     border: none;
@@ -114,7 +114,7 @@
     grid-template-columns: repeat(2, 2fr);
 }
 
-.container-day{
+.container-day {
     display: grid;
     width: 100%;
     gap: 10px;
@@ -127,7 +127,7 @@
     padding: 10px;
 }
 
-.container-day .hari{
+.container-day .hari {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,53 +140,53 @@
     animation-fill-mode: forwards;
 }
 
-.hari.mapel-up{
+.hari.mapel-up {
     animation-name: mapelUp;
 }
 
-@keyframes mapelUp{
-    0%{
+@keyframes mapelUp {
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.container-day .jam{
+.container-day .jam {
     display: flex;
     justify-content: left;
     align-items: center;
     font-size: 1.2rem;
     text-align: left;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
-.jam::before{
+.jam::before {
     content: "- ";
 }
 
-.jam.mapel-right{
+.jam.mapel-right {
     animation-name: mapelRight;
 }
 
-@keyframes mapelRight{
-    0%{
+@keyframes mapelRight {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.box-close-mapel{
+.box-close-mapel {
     display: grid;
     width: 100%;
     justify-content: center;
@@ -196,7 +196,7 @@
     background: transparent;
 }
 
-.box-close-mapel #close-mapel{
+.box-close-mapel #close-mapel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,11 +212,11 @@
 }
 
 #close-mapel:hover,
-#close-mapel:focus{
+#close-mapel:focus {
     background: red;
 }
 
-.piket{
+.piket {
     display: none;
     position: fixed;
     align-items: center;
@@ -232,28 +232,28 @@
     animation-fill-mode: forwards;
 }
 
-.piket::-webkit-scrollbar{
+.piket::-webkit-scrollbar {
     display: none;
 }
 
-.piket.openPiket{
+.piket.openPiket {
     display: grid;
     animation-name: showPiket;
 }
 
-@keyframes showPiket{
-    0%{
+@keyframes showPiket {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.content-piket{
+.content-piket {
     display: grid;
     gap: 20px;
     top: 7%;
@@ -300,7 +300,7 @@
     padding: 10px;
 }
 
-.box-h2-piket{
+.box-h2-piket {
     display: grid;
     position: relative;
     align-items: center;
@@ -308,7 +308,7 @@
     width: 100%;
 }
 
-.box-piket{
+.box-piket {
     display: grid;
     position: relative;
     border: none;
@@ -317,7 +317,7 @@
     grid-template-columns: repeat(2, 2fr);
 }
 
-.container-day{
+.container-day {
     display: grid;
     width: 100%;
     gap: 10px;
@@ -330,7 +330,7 @@
     padding: 10px;
 }
 
-.container-day .hari{
+.container-day .hari {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,53 +343,53 @@
     animation-fill-mode: forwards;
 }
 
-.hari.piket-up{
+.hari.piket-up {
     animation-name: piketUp;
 }
 
-@keyframes piketUp{
-    0%{
+@keyframes piketUp {
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.container-day .nama{
+.container-day .nama {
     display: flex;
     justify-content: left;
     align-items: center;
     font-size: 1.2rem;
     text-align: left;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
-.nama::before{
+.nama::before {
     content: "-";
 }
 
-.nama.piket-right{
+.nama.piket-right {
     animation-name: piketRight;
 }
 
-@keyframes piketRight{
-    0%{
+@keyframes piketRight {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.box-close-piket{
+.box-close-piket {
     display: grid;
     width: 100%;
     justify-content: center;
@@ -399,7 +399,7 @@
     background: transparent;
 }
 
-.box-close-piket #close-piket{
+.box-close-piket #close-piket {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,6 +415,46 @@
 }
 
 #close-piket:hover,
-#close-piket:focus{
+#close-piket:focus {
     background: red;
+}
+
+.container-denda-piket {
+    display: grid;
+    grid-column: 1 / -1;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    bottom: none;
+    background: red;
+}
+
+.h2-denda {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    border-bottom: 2px solid white;
+    background: transparent;
+}
+
+.box-denda-piket {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.box-denda-piket li::marker{
+    content: "-";
 }

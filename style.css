@@ -218,9 +218,9 @@ body.loaded {
     justify-content: center;
     align-items: center;
     position: relative;
-    color: var(--color8);
-    background-color: var(--color4);
-    border: none;
+    color: white;
+    background: #006e6e;
+    border: 2px solid #dbd8e3;
     font-size: 1.5rem;
     border-radius: 50%;
     width: 50px;
@@ -229,7 +229,7 @@ body.loaded {
 }
 
 .box-nav a:hover {
-    background-color: #2b585a;
+    background-color: #00181a;
 }
 
 .wave-up {
@@ -865,11 +865,11 @@ body.loaded {
 
 @media screen and (max-width: 768px) {
     .wave-up {
-        top: -4rem;
+        top: -7rem;
     }
 
     .wave-down {
-        top: 4rem;
+        top: 7rem;
     }
 
     .first-header {
@@ -885,9 +885,9 @@ body.loaded {
     }
 
     .box-bars #bars-fheader {
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
     }
 
     .home-media{
