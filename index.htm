@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home-instagram.css">
+    <link rel="stylesheet" href="css/home-maps.css">
+    <link rel="stylesheet" href="css/jadwal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" type="image/x-icon" href="image/Kementerian Agama.png">
+    <title>XI.C TECHNIC</title>
+</head>
+
+<body>
+
+    <header class="first-header" data-aos="fade-up">
+        <div class="content-first-header">
+            <div class="box-content-fheader">
+                <p>hai penghuni, XI.C</p>
+                <h2>welcome XI.C-TECHNIC</h2>
+            </div>
+
+            <div class="box-bars">
+                <button type="button" id="bars-fheader" class="fa-solid fa-bars-staggered" onclick="openNav()"></button>
+            </div>
+        </div>
+
+        <nav class="nav-header">
+            <div class="box-nav">
+                <a href="" class="fa-solid fa-home"></a>
+                <a href="" class="fa-brands fa-instagram"></a>
+                <a href="" class="fa-solid fa-calendar-days"></a>
+                <a href="" class="fa-solid fa-folder-tree"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pembukaan-page">
+        <svg xmlns="http://www.w3.org/2000/svg" data-aos="fade-down" class="wave-up" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+        <div class="content-pembukaan">
+            <div class="box-text-run">
+                <h2>XI.C TECHNIC.</h2>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" data-aos="fade-up" class="wave-down" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <section class="slide-image">
+        <div class="content-slideimg">
+            <div class="box-h2-image">
+                <h2>class image</h2>
+            </div>
+
+            <div class="box-image-slide">
+                <label class="slide active">
+                    <img src="image/foto 1.jpg" alt="">
+                </label>
+
+                <label class="slide next">
+                    <img src="image/foto 2.jpg" alt="">
+                </label>
+
+                <label class="slide next-to-next">
+                    <img src="image/foto 3.jpg" alt="">
+                </label>
+
+                <label class="slide prev-to-prev">
+                    <img src="image/foto 4.jpg" alt="">
+                </label>
+
+                <label class="slide prev">
+                    <img src="image/foto 6.jpg" alt="">
+                </label>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-media">
+        <div class="content-media">
+            <div class="box-h2-media">
+                <h2>social Media</h2>
+            </div>
+
+            <div class="box-a-media">
+                <a onclick="openInstagram()" class="fa-brands fa-instagram" id="instagram"></a>
+                <a onclick="openMaps()" class="fa fa-location-arrow" id="maps"></a>
+                <a href="" class="fa-brands fa-tiktok" id="tiktok"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="wave-up-instagram" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+
+        <div class="content-instagram">
+            <button type="button" id="closeInstagram" class="fa-solid fa-arrow-right-from-bracket"
+                onclick="closeInstagram()"></button>
+            <div class="box-h2-instagram">
+                <h2>instagram</h2>
+            </div>
+
+            <div class="box-akun-instagram">
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+
+                <a href="" class="icon-instagram">
+                    <div class="box-img-instagram">
+                        <img src="image/Kementerian Agama.png" alt="">
+                    </div>
+                    <p>XIC-TECHNIC</p>
+                </a>
+            </div>
+
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="wave-down-instagram" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <section class="home-maps">
+        <svg xmlns="http://www.w3.org/2000/svg" class="wave-up-maps" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+
+        <div class="content-maps">
+            <div class="box-h2-maps">
+                <h2>maps MAN 11 JAKSEL</h2>
+
+            </div>
+
+            <div class="box-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6771618018192!2d106.78385967409744!3d-6.306078161712672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee243c1355a9%3A0x4682775060c480a8!2sMAN%2011%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1719299250416!5m2!1sid!2sid"
+                    width="300" height="300" style="border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="bt-close-maps">
+                <button type="button" id="closeMaps" class="fa-solid fa-arrow-right-from-bracket"
+                    onclick="closeMaps()"></button>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="wave-down-maps" viewBox="0 0 1440 320">
+            <path fill="#00adb5" fill-opacity="1"
+                d="M0,288L30,266.7C60,245,120,203,180,186.7C240,171,300,181,360,181.3C420,181,480,171,540,144C600,117,660,75,720,96C780,117,840,203,900,224C960,245,1020,203,1080,176C1140,149,1200,139,1260,138.7C1320,139,1380,149,1410,154.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <section class="home-jadwal">
+        <div class="content-jadwal">
+            <div class="box-h2-jadwal">
+                <h2>jadwal</h2>
+            </div>
+
+            <div class="box-button-jadwal">
+                <button type="button" class="button-mapel" onclick="showMapel()">mapel</button>
+                <button type="button" class="button-piket" onclick="showPiket()">piket</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapel">
+        <div class="content-mapel">
+            <div class="box-h2-mapel">
+                <h2>mapel</h2>
+            </div>
+
+            <div class="box-mapel">
+                <div class="container-day">
+                    <h2 class="hari">Senin</h2>
+                    <ol class="box-jam">
+                        <li class="jam">Fisika</li>
+                        <li class="jam">Matwa</li>
+                        <li class="jam">B.ArabMinat</li>
+                        <li class="jam">B.ArabWajib</li>
+                        <li class="jam">Sejarah</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Selasa</h2>
+                    <ol class="box-jam">
+                        <li class="jam">Matmin</li>
+                        <li class="jam">SBK</li>
+                        <li class="jam">B.Indonesia</li>
+                        <li class="jam">PJOK</li>
+                        <li class="jam">Fisika</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Rabu</h2>
+                    <ol class="box-jam">
+                        <li class="jam">Geografi</li>
+                        <li class="jam">Informatika</li>
+                        <li class="jam">Akidah Akhlak</li>
+                        <li class="jam">Tahfiz</li>
+                        <li class="jam">SKI</li>
+                        <li class="jam">PKWU</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Kamis</h2>
+                    <ol class="box-jam">
+                        <li class="jam">Fiqih</li>
+                        <li class="jam">Geografi</li>
+                        <li class="jam">Informatika</li>
+                        <li class="jam">B.Inggris</li>
+                        <li class="jam">Matmin</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Jumat</h2>
+                    <ol class="box-jam">
+                        <li class="jam">Projek</li>
+                        <li class="jam">BK</li>
+                        <li class="jam">Geografi</li>
+                        <li class="jam">Informatika</li>
+                        <li class="jam">Qurdis</li>
+                        <li class="jam">PPKN</li>
+                    </ol>
+                </div>
+
+                <div class="box-close-mapel">
+                    <button type="button" onclick="closeMapel()" class="fa-solid fa-arrow-right-from-bracket"
+                        id="close-mapel"></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="piket">
+        <div class="content-piket">
+            <div class="box-h2-piket">
+                <h2>Piket</h2>
+            </div>
+
+            <div class="box-piket">
+                <div class="container-day">
+                    <h2 class="hari">Senin</h2>
+                    <ol class="box-nama">
+                        <li class="nama">Santoso</li>
+                        <li class="nama">Adhit</li>
+                        <li class="nama">Aryo</li>
+                        <li class="nama">Davina(PJ)</li>
+                        <li class="nama">Thania</li>
+                        <li class="nama">Egi</li>
+                        <li class="nama">Ucup</li>
+                        <li class="nama">Faiq</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Selasa</h2>
+                    <ol class="box-nama">
+                        <li class="nama">Zalfa</li>
+                        <li class="nama">Aca</li>
+                        <li class="nama">Aurel</li>
+                        <li class="nama">Aby</li>
+                        <li class="nama">Pipeh</li>
+                        <li class="nama">Rafi</li>
+                        <li class="nama">Alya</li>
+                        <li class="nama">Arvel</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Rabu</h2>
+                    <ol class="box-nama">
+                        <li class="nama">Qafka</li>
+                        <li class="nama">Mamet</li>
+                        <li class="nama">Dirza</li>
+                        <li class="nama">Fatur</li>
+                        <li class="nama">Okan(PJ)</li>
+                        <li class="nama">Farrel</li>
+                        <li class="nama">Khaira</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Kamis</h2>
+                    <ol class="box-nama">
+                        <li class="nama">Najwal</li>
+                        <li class="nama">Davi</li>
+                        <li class="nama">Naomi</li>
+                        <li class="nama">Sarah</li>
+                        <li class="nama">Nabila</li>
+                        <li class="nama">Hamka</li>
+                        <li class="nama">Zea</li>
+                    </ol>
+                </div>
+
+                <div class="container-day">
+                    <h2 class="hari">Jumat</h2>
+                    <ol class="box-nama">
+                        <li class="nama">Khani(PJ)</li>
+                        <li class="nama">Kokoh</li>
+                        <li class="nama">Pio</li>
+                        <li class="nama">Adam</li>
+                        <li class="nama">Jaki</li>
+                        <li class="nama">Dinda</li>
+                        <li class="nama">Rafa</li>
+                    </ol>
+                </div>
+
+                <div class="box-close-piket">
+                    <button type="button" onclick="closePiket()" class="fa-solid fa-arrow-right-from-bracket"
+                        id="close-piket"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+     <section class="pengurus-kelas">
+        <div class="isipengurus" id="pengurus" data-aos="fade-up">
+            <div class="judulpengurus" data-aos="fade-right">
+                <h2>pengurus</h2>
+            </div>
+
+            <div class="box-pengurus">
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(1)">
+                    <div class="posisi">
+                        <h3>wali kelas : </h3>
+                        <span>bu renny</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data1">
+                        <p>ini adalah wali kelas kami bu novitareny</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(2)">
+                    <div class="posisi">
+                        <h3>ketua kelas : </h3>
+                        <span>mdzakwan</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data2">
+                        <p>ini adalah ketua kelas kami mdzakwan atau kokoh</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(3)">
+                    <div class="posisi">
+                        <h3>wakil ketua kelas : </h3>
+                        <span>zea</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data3">
+                        <p>ini adalah wakil ketua kelas kami zea</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(4)">
+                    <div class="posisi">
+                        <h3>sekertaris 1 : </h3>
+                        <span>aurel</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data4">
+                        <p>ini adalah sekertaris kami aurel</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(5)">
+                    <div class="posisi">
+                        <h3>sekertaris 2: </h3>
+                        <span>davina</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data5">
+                        <p>ini adalah sekertaris 2 kami davina</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(6)">
+                    <div class="posisi">
+                        <h3>bendahara 1 : </h3>
+                        <span>aca</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data6">
+                        <p>ini adalah bendahara 1 kami aca</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(7)">
+                    <div class="posisi">
+                        <h3>bendahara 2 : </h3>
+                        <span>pio</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data7">
+                        <p>ini adalah bendahara 2 kami pio</p>
+                    </div>
+                </div>
+
+                <div class="line" data-aos="fade-up">
+                    <div class="garis"></div>
+                </div>
+
+                <div class="pengurus" data-aos="fade-right" onclick="toggleData(8)">
+                    <div class="posisi">
+                        <h3>kebersihan : </h3>
+                        <span>dinda</span>
+                    </div>
+                    <div class="data-identitas data-hidden" id="data8">
+                        <p>ini adalah kebersihan kami dinda</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    -->
+
+
+    <footer class="footer-dev">
+        <div class="content-footer">
+            <div class="box-h2-footer">
+                <h2>DEV</h2>
+            </div>
+
+            <div class="footer-h2-maps">
+                <h2>alamat:</h2>
+            </div>
+
+            <div class="box-maps-dev">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.774953713051!2d106.80060197409779!3d-6.324793961886981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee6dd29a9f5f%3A0x732ab4da74620b12!2sJl.%20Sungai%2C%20Pangkalan%20Jati%20Baru%2C%20Kec.%20Cinere%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e1!3m2!1sid!2sid!4v1719677879332!5m2!1sid!2sid"
+                    width="300" height="300" style="border:2px solid white; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-media-dev">
+                <a href="" class="wa-dev">
+                    <i class="fa-brands fa-whatsapp" id="icon-wa-dev"></i>
+                    <p>hubungi dev kami</p>
+                </a>
+            </div>
+
+            <div class="nama-dev">
+                <h2>dibuat oleh:</h2>
+                <p>m.farrel dwi andhika</p>
+                <p>30 juni 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+@import url('home-instagram.css');
+@import url('style2.css');
+
+:root {
+    --color0: #211c2e;
+    --color1: #222831;
+    --color2: #393e46;
+    --color3: #007e73;
+    --color4: #00bfc5;
+    --color5: #2a2438;
+    --color6: #352f44;
+    --color7: #5c5470;
+    --color8: #dbd8e3;
+    --color9: #ffffff;
+}
+
+.home-maps {
+    display: none;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    border: none;
+    z-index: 102;
+    background: linear-gradient(to bottom, #002222, #002424, #004444);
+    min-height: 100vh;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.home-maps.showMaps {
+    display: grid;
+    animation-name: openMaps;
+}
+
+@keyframes openMaps {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.wave-up-maps {
+    display: grid;
+    position: relative;
+    width: 100%;
+    top: -2rem;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.wave-up-maps.animation-down {
+    animation-name: wavedownAnimation;
+}
+
+.wave-down-maps {
+    display: grid;
+    position: relative;
+    width: 100%;
+    top: 2rem;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.wave-down-maps.animation-up {
+    animation-name: waveupAnimation;
+}
+
+.content-maps {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+    border: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.content-maps.animation-right{
+    animation-name: contentIgRight;
+}
+
+.bt-close-maps{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    position: relative;
+}
+
+#closeMaps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 103;
+    width: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 3px solid #007e73;
+    border-radius: 10px;
+    color: white;
+    transition: .6s ease;
+}
+
+#closeMaps:hover,
+#closeMaps:focus{
+    background: var(--color3);
+}
+
+.box-h2-maps{
+    display: grid;
+    width: 100%;
+    position: relative;
+    border: none;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+    background-color: transparent;
+    top: 0;
+}
+
+.box-h2-maps h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .wave-up-maps{
+        top: -1rem;
+    }
+
+    .wave-down-maps{
+        top: 1rem;
+    }
+
+    .box-h2-maps h2{
+        font-size: 1.4rem;
+    }
+
+    #closeMaps{
+        font-size: 2rem;
+    }
+}

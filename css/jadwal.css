@@ -1,0 +1,420 @@
+@import url('home-instagram.css');
+
+:root {
+    --color0: #211c2e;
+    --color1: #222831;
+    --color2: #393e46;
+    --color3: #007e73;
+    --color4: #00bfc5;
+    --color5: #2a2438;
+    --color6: #352f44;
+    --color7: #5c5470;
+    --color8: #dbd8e3;
+    --color9: #ffffff;
+}
+
+.mapel{
+    display: none;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    border: none;
+    z-index: 102;
+    max-height: 100vh;
+    width: 100%;
+    background: var(--color0);
+    overflow: auto;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.mapel::-webkit-scrollbar{
+    display: none;
+}
+
+.mapel.openMapel{
+    display: grid;
+    animation-name: showMapel;
+}
+
+@keyframes showMapel{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content-mapel{
+    display: grid;
+    gap: 20px;
+    top: 7%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+}
+
+.box-h2-mapel {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    color: var(--color8);
+    border: none;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.box-h2-mapel h2 {
+    display: flex;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--color3);
+    box-shadow: 0 1px 2px 1px white;
+    border: none;
+    color: var(--color8);
+    font-size: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.box-h2-mapel{
+    display: grid;
+    position: relative;
+    align-items: center;
+    border: none;
+    width: 100%;
+}
+
+.box-mapel{
+    display: grid;
+    position: relative;
+    border: none;
+    align-items: stretch;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.container-day{
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+    border: none;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+    color: white;
+    padding: 10px;
+}
+
+.container-day .hari{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #006db5;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hari.mapel-up{
+    animation-name: mapelUp;
+}
+
+@keyframes mapelUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-day .jam{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.jam::before{
+    content: "- ";
+}
+
+.jam.mapel-right{
+    animation-name: mapelRight;
+}
+
+@keyframes mapelRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box-close-mapel{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+.box-close-mapel #close-mapel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    background: #007e73;
+    transition: .6s ease;
+}
+
+#close-mapel:hover,
+#close-mapel:focus{
+    background: red;
+}
+
+.piket{
+    display: none;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    border: none;
+    z-index: 102;
+    max-height: 100vh;
+    width: 100%;
+    background: var(--color0);
+    overflow: auto;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.piket::-webkit-scrollbar{
+    display: none;
+}
+
+.piket.openPiket{
+    display: grid;
+    animation-name: showPiket;
+}
+
+@keyframes showPiket{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content-piket{
+    display: grid;
+    gap: 20px;
+    top: 7%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+}
+
+.box-h2-piket {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    color: var(--color8);
+    border: none;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.box-h2-piket h2 {
+    display: flex;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--color3);
+    box-shadow: 0 1px 2px 1px white;
+    border: none;
+    color: var(--color8);
+    font-size: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.box-h2-piket{
+    display: grid;
+    position: relative;
+    align-items: center;
+    border: none;
+    width: 100%;
+}
+
+.box-piket{
+    display: grid;
+    position: relative;
+    border: none;
+    align-items: stretch;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.container-day{
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+    border: none;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px #dbd8e3;
+    color: white;
+    padding: 10px;
+}
+
+.container-day .hari{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #006db5;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hari.piket-up{
+    animation-name: piketUp;
+}
+
+@keyframes piketUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-day .nama{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.nama::before{
+    content: "-";
+}
+
+.nama.piket-right{
+    animation-name: piketRight;
+}
+
+@keyframes piketRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box-close-piket{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+.box-close-piket #close-piket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    background: #007e73;
+    transition: .6s ease;
+}
+
+#close-piket:hover,
+#close-piket:focus{
+    background: red;
+}
