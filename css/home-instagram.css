@@ -92,6 +92,22 @@
     }
 }
 
+.home-instagram.closeInstagram{
+    animation-name: tutupHomeIg;
+}
+
+@keyframes tutupHomeIg{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
 .content-instagram {
     display: grid;
     width: 100%;

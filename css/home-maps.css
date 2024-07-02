@@ -46,6 +46,22 @@
     }
 }
 
+.home-maps.closeMaps{
+    animation-name: tutupMaps;
+}
+
+@keyframes tutupMaps{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
 .wave-up-maps {
     display: grid;
     position: relative;

@@ -14,42 +14,67 @@ function openNav() {
 }
 
 function openInstagram() {
-    const showInstagram = document.querySelector(".home-instagram");
+    const homeInstagram = document.querySelector(".home-instagram");
+    homeInstagram.style.display = "grid";
+    homeInstagram.classList.add("showInstagram");
+    homeInstagram.classList.remove("closeInstagram");
+    
+    
     const waveUp = document.querySelector(".wave-up-instagram");
-    const waveDown = document.querySelector(".wave-down-instagram");
-    const contentInstagram = document.querySelector(".content-instagram");
-
-    showInstagram.classList.add("showInstagram");
     waveUp.classList.add("animation-down");
+    
+    const waveDown = document.querySelector(".wave-down-instagram");
     waveDown.classList.add("animation-up");
+    
+    const contentInstagram = document.querySelector(".content-instagram");
     contentInstagram.classList.add("animation-right");
 }
 
 function closeInstagram() {
-    const closedInstagram = document.querySelector(".home-instagram");
-    closedInstagram.classList.remove("showInstagram");
+    const homeInstagram = document.querySelector(".home-instagram");
+    homeInstagram.classList.add("closeInstagram");
+    homeInstagram.classList.remove("showInstagram");
+
+    homeInstagram.addEventListener("animationend", () => {
+        if (!homeInstagram.classList.contains("showInstagtam")) {
+            homeInstagram.style.display = "none";
+        }
+    }, { once: true })
 }
 
 function openMaps() {
     const showMaps = document.querySelector(".home-maps");
-    const waveUpMaps = document.querySelector(".wave-up-maps");
-    const waveDownMaps = document.querySelector(".wave-down-maps");
-    const contentMaps = document.querySelector(".content-maps");
-
+    showMaps.style.display = "grid";
     showMaps.classList.add("showMaps");
+    showMaps.classList.remove("closeMaps");
+
+    const waveUpMaps = document.querySelector(".wave-up-maps");
     waveUpMaps.classList.add("animation-down");
+
+    const waveDownMaps = document.querySelector(".wave-down-maps");
     waveDownMaps.classList.add("animation-up");
+
+    const contentMaps = document.querySelector(".content-maps");
     contentMaps.classList.add("animation-right");
 }
 
 function closeMaps() {
     const showMaps = document.querySelector(".home-maps");
-    const waveUpMaps = document.querySelector(".wave-up-maps");
-    const waveDownMaps = document.querySelector(".wave-down-maps");
-
+    showMaps.classList.add("closeMaps");
     showMaps.classList.remove("showMaps");
+
+    showMaps.addEventListener("animationend", () => {
+        if(!showMaps.classList.contains("showMaps")) {
+            showMaps.style.display =  "none";
+        }
+    }, {once: true})
+
+    const waveUpMaps = document.querySelector(".wave-up-maps");
     waveUpMaps.classList.remove("animation-down");
+
+    const waveDownMaps = document.querySelector(".wave-down-maps");
     waveDownMaps.classList.remove("animation-up");
+
 }
 
 function showMapel() {
