@@ -78,8 +78,10 @@ function closeMaps() {
 }
 
 function showMapel() {
-    const openMapel = document.querySelector(".mapel");
-    openMapel.classList.add("openMapel");
+    const homeMapel = document.querySelector(".mapel");
+    homeMapel.style.display = "grid";
+    homeMapel.classList.add("openMapel");
+    homeMapel.classList.remove("closeMapel");
 
     const hariMapel = document.querySelectorAll(".hari");
     hariMapel.forEach(hari => {
@@ -93,13 +95,22 @@ function showMapel() {
 }
 
 function closeMapel() {
-    const mapelClose = document.querySelector(".mapel");
-    mapelClose.classList.remove("openMapel");
+    const homeMapel = document.querySelector(".mapel");
+    homeMapel.classList.add("closeMapel")
+    homeMapel.classList.remove("openMapel");
+
+    homeMapel.addEventListener("animationend", () => {
+        if(!homeMapel.classList.contains("openMapel")) {
+            homeMapel.style.display = "none";
+        }
+    }, {once: true})
 }
 
 function showPiket() {
-    const openPiket = document.querySelector(".piket");
-    openPiket.classList.add("openPiket");
+    const homePiket = document.querySelector(".piket");
+    homePiket.style.display = "grid";
+    homePiket.classList.add("openPiket");
+    homePiket.classList.remove("closePiket");
 
     const hariPiket = document.querySelectorAll(".hari");
     hariPiket.forEach(hari => {
@@ -113,8 +124,15 @@ function showPiket() {
 }
 
 function closePiket() {
-    const piketClose = document.querySelector(".piket");
-    piketClose.classList.remove("openPiket");
+    const homePiket = document.querySelector(".piket");
+    homePiket.classList.add("closePiket")
+    homePiket.classList.remove("openPiket");
+
+    homePiket.addEventListener("animationend", () => {
+        if(!homePiket.classList.contains("openPiket")) {
+            homePiket.style.display = "none";
+        }
+    }, {once: true})
 }
 
 document.addEventListener("DOMContentLoaded", function () {

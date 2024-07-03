@@ -23,7 +23,7 @@
     z-index: 102;
     max-height: 100vh;
     width: 100%;
-    background: var(--color0);
+    background: linear-gradient(to bottom, #002222, #002424, #004444);
     overflow: auto;
     animation-duration: .6s;
     animation-fill-mode: forwards;
@@ -47,6 +47,22 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+.mapel.closeMapel {
+    animation-name: tutupMapel;
+}
+
+@keyframes tutupMapel {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-100px);
     }
 }
 
@@ -226,7 +242,7 @@
     z-index: 102;
     max-height: 100vh;
     width: 100%;
-    background: var(--color0);
+    background: linear-gradient(to bottom, #002222, #002424, #004444);
     overflow: auto;
     animation-duration: .6s;
     animation-fill-mode: forwards;
@@ -250,6 +266,22 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+.piket.closePiket {
+    animation-name: tutupPiket;
+}
+
+@keyframes tutupPiket {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(-100px);
     }
 }
 
@@ -455,6 +487,6 @@
     gap: 10px;
 }
 
-.box-denda-piket li::marker{
+.box-denda-piket li::marker {
     content: "-";
 }
